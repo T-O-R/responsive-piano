@@ -19,7 +19,6 @@ body {
 .container {
   background-color: var(--darkgreen);
   border-radius: 10px;
-  height: 32vh;
   left: 50%;
   padding: 1.5em;
   position: absolute;
