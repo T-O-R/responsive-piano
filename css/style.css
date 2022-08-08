@@ -37,11 +37,11 @@ body {
 .keyboard {
   display: flex;
   margin-top: 30px;
+  height: 30vh;
 }
 
 .keyboard-one {
   background-color: var(--white);
-  height: 200px;
   width: 150px;
   position: relative;
 }
@@ -110,7 +110,6 @@ body {
 
 .keyboard-two {
   background-color: var(--white);
-  height: 200px;
   width: 200px;
   position: relative;
 }
@@ -118,7 +117,6 @@ body {
 .keyboard-three {
   display: none;
   background-color: var(--white);
-  height: 200px;
   width: 150px;
   position: relative;
 }
@@ -126,7 +124,6 @@ body {
 .keyboard-four {
   display: none;
   background-color: var(--white);
-  height: 200px;
   width: 200px;
   position: relative;
 }
