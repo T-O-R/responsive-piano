@@ -1,0 +1,147 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkgreen: #08521c;
+  --white:  #eee;
+  --black: #222;
+}
+
+body {
+  background-color: gray;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 90vw;
+}
+
+.container {
+  background-color: var(--darkgreen);
+  border-radius: 10px;
+  height: 32vh;
+  left: 50%;
+  padding: 1.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 90%;
+  min-width: 400px;
+}
+
+.fcc-img {
+  color: var(--white);
+  height: 50px;
+  width: 220px;
+}
+
+.keyboard {
+  display: flex;
+  margin-top: 30px;
+}
+
+.keyboard-one {
+  background-color: var(--white);
+  height: 200px;
+  width: 150px;
+  position: relative;
+}
+
+.black {
+  position: absolute;
+  background-color: var(--black);
+  height: 50%;
+  width: 35px;
+
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0, .75);
+  transition: box-shadow ease-out 250ms;
+}
+
+.black:hover,
+.black:focus {
+  transform: translateX(-1px);
+  background-color: var(--black);
+  box-shadow: 1px 1px 3px 3px rgba(0,0,0, .25);
+  padding-top: -5px;
+  z-index: 2;
+}
+
+.key {
+  position: absolute;
+  border: 1px solid var(--black);
+  height: 100%;
+  width: 50px;
+
+  box-shadow: 2px 3px 2px 2px rgba(0,0,0, .75);
+  transition: box-shadow ease-out 250ms;
+}
+
+.key:hover,
+.key:focus {
+  transform: translateX(-3px);
+  background-color: var(--white);
+  box-shadow: 0px 5px 5px 4px rgba(0,0,0, .25);
+  padding-top: -5px;
+  z-index: -10;
+}
+
+.key__two {
+  margin-left: 50px;
+}
+
+.key__three {
+  margin-left: 100px;
+}
+
+.key__four {
+  margin-left: 150px;
+}
+
+.black__key--one {
+  margin-left: 35px;
+}
+
+.black__key--two {
+  margin-left: 85px;
+}
+
+.black__key--three {
+  margin-left: 135px;
+}
+
+.keyboard-two {
+  background-color: var(--white);
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.keyboard-three {
+  display: none;
+  background-color: var(--white);
+  height: 200px;
+  width: 150px;
+  position: relative;
+}
+
+.keyboard-four {
+  display: none;
+  background-color: var(--white);
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 750px;
+  }
+
+  .keyboard-three {
+    display: block;
+  }
+
+  .keyboard-four {
+    display: block;
+  }
+}
